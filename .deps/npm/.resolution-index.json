@@ -1,0 +1,13 @@
+{
+  "contracts/HelloWorld.sol": {
+    "__sources__": {
+      "contracts/HelloWorld.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity >=0.6.12 <0.9.0;\n\ncontract HelloWorld {\n  /**\n   * @dev Prints Hello World string\n   */\n  function print() public pure returns (string memory) {\n    return \"Hello World!\";\n  }\n}\n",
+        "file": "contracts/HelloWorld.sol"
+      }
+    }
+  },
+  "contracts/TokenMarketPlace.sol": {
+    "__sources__": {}
+  }
+}
