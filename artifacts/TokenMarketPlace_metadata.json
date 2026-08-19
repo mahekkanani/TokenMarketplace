@@ -17,6 +17,19 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "numberOfTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "buyTokensFromMarketplace",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -47,11 +60,11 @@
 	},
 	"sources": {
 		"contracts/TokenMarketPlace.sol": {
-			"keccak256": "0xec919005673862e4e371ddc1fa46f502d3a65e89f8166dd480fa4e4b17cbe5a4",
+			"keccak256": "0xb995cc467e19390bb324440133b6df4cfebd53773cbaad6f6bebdc04d1f9a83f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0b7f53e00339b2b2ab49d53a5c220c8d0ce8850e0aa672745ee5d4ad48a79075",
-				"dweb:/ipfs/QmT8XGJoMiF5cFtfqJEqj9SLzCGarQoMwgRhv5xNPbKTWj"
+				"bzz-raw://2e35d87def3ead631f500179e27fdabf181cf43c1d92d635c8ec15558f4143fb",
+				"dweb:/ipfs/QmeEdY7Deo5Lhpz28DL4uRTcXFcwNKYdjXPvPhUeahA5UU"
 			]
 		}
 	},

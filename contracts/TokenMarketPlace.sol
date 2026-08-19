@@ -7,11 +7,11 @@ contract TokenMarketPlace{
 
     uint public  constant TOKEN_PRICE = 1 ether;
     //constant means it should not change 
-    uint private reservedTokens;
+    uint private reservedTokens = 256;
     //we can call only public variable cannot private variable
     // solidity shows the value of eth in wei 
 
-    function buyTokensFromMarketplace(uint256 noOfTokens) external {
+    function buyTokensFromMarketplace(uint256 numberOfTokens) external payable {
         
     }
 }
