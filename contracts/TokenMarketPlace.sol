@@ -7,11 +7,29 @@ contract TokenMarketPlace{
 
     uint public  constant TOKEN_PRICE = 1 ether;
     //constant means it should not change 
-    uint private reservedTokens = 256;
+    uint private reservedOrderedTokens;
     //we can call only public variable cannot private variable
     // solidity shows the value of eth in wei 
+    error TokenMarketplace_ZeroTokens(uint256 numberOfTokens);
+    error TokenMarketplace_InsufficientEthPayment(uint256 expectedPayment,uint256 actualPayment);
 
-    function buyTokensFromMarketplace(uint256 numberOfTokens) external payable {
+
+    function _isNumberOfTokensZero(uint256 numberOfTokens) internal pure { 
+        if(numberOfTokens==0){
+            revert TokenMarketplace_ZeroTokens(numberOfTokens);
+        }
+    }
+
+    function _checkEthPayment(uint256 numberOfTokens) internal view {
+        if(numberOfTokens*TOKEN_PRICE!=msg.value){
+            revert TokenMarketplace_InsufficientEthPayment(numberOfTokens*TOKEN_PRICE,msg.value);
+        }
+    }
+
+    function buyTokensFromMarketplace(uint256 numberOfTokens) external payable{
+        _isNumberOfTokensZero(numberOfTokens);
+        _checkEthPayment(numberOfTokens);
         
     }
+    
 }

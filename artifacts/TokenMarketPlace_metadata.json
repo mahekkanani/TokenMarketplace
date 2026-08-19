@@ -6,6 +6,33 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "expectedPayment",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "actualPayment",
+						"type": "uint256"
+					}
+				],
+				"name": "TokenMarketplace_InsufficientEthPayment",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "numberOfTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "TokenMarketplace_ZeroTokens",
+				"type": "error"
+			},
+			{
 				"inputs": [],
 				"name": "TOKEN_PRICE",
 				"outputs": [
@@ -60,11 +87,11 @@
 	},
 	"sources": {
 		"contracts/TokenMarketPlace.sol": {
-			"keccak256": "0xb995cc467e19390bb324440133b6df4cfebd53773cbaad6f6bebdc04d1f9a83f",
+			"keccak256": "0x30aa2a596dfd59674f52f8b13bfcf0d42c036de01d28c9a5a6747a31705d5102",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2e35d87def3ead631f500179e27fdabf181cf43c1d92d635c8ec15558f4143fb",
-				"dweb:/ipfs/QmeEdY7Deo5Lhpz28DL4uRTcXFcwNKYdjXPvPhUeahA5UU"
+				"bzz-raw://cf82725b968534009d6fd7068f6cd04d994a2029594d1c6c894a6ff8464c7de0",
+				"dweb:/ipfs/QmQRV1xFRsqeaan6sizYE6azCw7qthXL4tQJpn35uZ5yUe"
 			]
 		}
 	},
