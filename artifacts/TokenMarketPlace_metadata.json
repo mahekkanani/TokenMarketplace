@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "TOKEN_PRICE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/TokenMarketPlace.sol": "TokenMarketPlace"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/TokenMarketPlace.sol": {
+			"keccak256": "0xec919005673862e4e371ddc1fa46f502d3a65e89f8166dd480fa4e4b17cbe5a4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0b7f53e00339b2b2ab49d53a5c220c8d0ce8850e0aa672745ee5d4ad48a79075",
+				"dweb:/ipfs/QmT8XGJoMiF5cFtfqJEqj9SLzCGarQoMwgRhv5xNPbKTWj"
+			]
+		}
+	},
+	"version": 1
+}

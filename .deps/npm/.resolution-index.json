@@ -8,6 +8,11 @@
     }
   },
   "contracts/TokenMarketPlace.sol": {
-    "__sources__": {}
+    "__sources__": {
+      "contracts/TokenMarketPlace.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.7.0 <0.9.0;\r\n\r\ncontract TokenMarketPlace{\r\n    //int for both positive and neg value store\r\n    //uint for positive value store\r\n\r\n    uint public  constant TOKEN_PRICE = 1 ether;\r\n    //constant means it should not change \r\n    uint private reservedTokens;\r\n    //we can call only public variable cannot private variable\r\n    // solidity shows the value of eth in wei \r\n\r\n    function buyTokensFromMarketplace(uint256 noOfTokens) external {\r\n        \r\n    }\r\n}",
+        "file": "contracts/TokenMarketPlace.sol"
+      }
+    }
   }
 }
