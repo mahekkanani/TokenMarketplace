@@ -8,6 +8,17 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_gldToken",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "expectedPayment",
 						"type": "uint256"
@@ -57,6 +68,19 @@
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gldToken",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -86,12 +110,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/TokenMarketPlace.sol": {
-			"keccak256": "0x30aa2a596dfd59674f52f8b13bfcf0d42c036de01d28c9a5a6747a31705d5102",
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x74ed01eb66b923d0d0cfe3be84604ac04b76482a55f9dd655e1ef4d367f95bc2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cf82725b968534009d6fd7068f6cd04d994a2029594d1c6c894a6ff8464c7de0",
-				"dweb:/ipfs/QmQRV1xFRsqeaan6sizYE6azCw7qthXL4tQJpn35uZ5yUe"
+				"bzz-raw://5282825a626cfe924e504274b864a652b0023591fa66f06a067b25b51ba9b303",
+				"dweb:/ipfs/QmeCfPykghhMc81VJTrHTC7sF6CRvaA1FXVq2pJhwYp1dV"
+			]
+		},
+		"contracts/TokenMarketPlace.sol": {
+			"keccak256": "0x7be58ef2509e0e38a5d5accb4524386308b2e56fba45e3bbb0c8745be21ee47f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fcc76836f1af08837a1740e94108f1cc10713ae81bc9cdffb7c29ea28f5f2fd8",
+				"dweb:/ipfs/QmUM8hZbn6TffuFbvwTuYwX9QR8Yq7iPosphJyktScZJJc"
 			]
 		}
 	},
